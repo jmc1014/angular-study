@@ -1,0 +1,12 @@
+<div class="flex flex-warp">
+  <div class="w-full mx-auto">
+    <app-shopping-edit></app-shopping-edit>
+    <div class="border mb-4"></div>
+    <p>The List</p>
+    <ul class="list-reset border border-gray-lighter rounded">
+      <li class="cursor-pointer border-t  border-gray-lighter px-4 py-2 first:border-t-0" *ngFor="let ingredient of ingredients">
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </li>
+    </ul>
+  </div>
+</div>

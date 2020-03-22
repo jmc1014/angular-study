@@ -1,0 +1,39 @@
+<header class="bg-red-darkest py-2 shadow-md">
+  <div class="container mx-auto">
+    <div class="flex flex-row justify-between content-center">
+      <div><a href="#" class="text-3xl text-apple-lightest block hover:text-apple">Recipe Book</a></div>
+      <div class="js-burger md:hidden mr-4 text-white h-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </div>
+        <ul class="list-reset mr-4 hidden md:flex flex-row flex-wrap self-center font-semibold text-white text-lg leading-none">
+          <li class="ml-6">
+            <a class="block py-2 border-b-2 border-transparent hover:border-white text-white no-underline" href="#">Recipes</a>
+          </li>
+          <li class="ml-6">
+            <a class="block py-2 border-b-2 border-transparent hover:border-white text-white no-underline" href="#">Shopping List</a>
+          </li>
+          <li class="py-2 text-white relative cursor-pointer group hover:text-green-lightest ml-4  ">
+              Manage
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle ml-1 inline-block"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <ul class="triangle absolute pin-t-100 pin-l-50 z-20 opacity-0 w-32 1lg:w-48 invisible 1text-3xl flex flex-col list-reset pt-2 bg-white whitespace-no-wrap dropdown-list visible-hover 1text-sm rounded shadow-lg group-hover:opacity-100 group-hover:visible">
+                  <li>
+                      <a href="#" target="_blank" class="block flex flex-row items-center justify-around text-red p-2 text-green-dark no-underline bg-hover hover:bg-red-light hover:text-white">
+                          Save Data
+                      </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="block flex flex-row items-center justify-around text-red p-2 text-green-dark no-underline bg-hover hover:bg-red-light hover:text-white">
+                      Fetch Data
+                    </a>
+                  </li>
+              </ul>
+          </li>
+        </ul>
+    </div>
+  </div>
+</header>

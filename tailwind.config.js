@@ -113,7 +113,7 @@ module.exports = {
     borderColor: ["responsive", "hover", "focus", "group-hover"],
     borderRadius: ["responsive"],
     borderStyle: ["responsive", "hover"],
-    borderWidth: ["responsive", "hover"],
+    borderWidth: ["responsive", "first", "hover"],
     boxShadow: ["responsive", "hover", "focus"],
     cursor: ["responsive"],
     display: ["responsive", "last", "group-hover"],

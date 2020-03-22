@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/* https://dev.to/seankerwin/angular-8-tailwind-css-guide-3m45 */
 /*!
 * @project     Boiler Plate
 * @version     1.0
@@ -7,4 +8,65 @@
 */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
+
 @import 'tailwindcss/utilities';
+
+.pin-l-50 {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.pin-t-100 {
+    top: 100%;
+}
+
+.triangle:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 0 6px 6px;
+    z-index: 10
+}
+
+.btn {
+  @apply rounded px-3 py-2
+}
+
+.btn--blue {
+  @apply text-white bg-blue
+}
+
+.btn--blue:hover {
+  @apply bg-blue-dark
+}
+
+.btn--green {
+  @apply bg-green-light text-white
+}
+.btn--green:hover {
+  @apply bg-green-dark
+}
+
+.btn--red {
+  @apply bg-red text-white
+}
+
+.btn--red:hover {
+  @apply bg-red-dark
+}
+
+.btn--ghost {
+  @apply bg-transparent text-gray-light border border-gray-lighter
+}
+
+.btn--ghost:hover {
+  @apply text-gray-lightest border-transparent bg-gray-lighter
+}
